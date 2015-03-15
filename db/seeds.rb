@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Post.create({
+first_post = Post.create({
   title: "Direct Trade 3 Wolf Moon Lo-Fi Leggings",
   body: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
     Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
@@ -27,6 +27,8 @@ Post.create({
   author: "Tony S. Tubblebine",
   author_photo_url: "https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/73.jpg"
 })
+first_post.created_at = 5.days.ago-2.hours-7.minutes
+first_post.save
 
 Post.create({
   title: "Check out Hipster Ipsum (hipsum.co)",
