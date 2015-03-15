@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.page-header {
+  margin-top: 0;
+  overflow: auto; // clear margins
+  background-color: rgb(61, 79, 93);
+
+  h1 { color: #fff; }
+  small { color: rgb(176, 202, 219); }
+}
+
 article h2 {
   margin-top: 0;
   overflow: auto; // clear floats
