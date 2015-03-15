@@ -1,3 +1,12 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+article h2 {
+  margin-top: 0;
+  overflow: auto; // clear floats
+  img {
+    float: right;
+    border-radius: 50%;
+  }
+}
