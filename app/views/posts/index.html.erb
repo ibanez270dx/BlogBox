@@ -2,15 +2,19 @@
 <% @posts.each do |post| %>
   <article class="panel panel-default">
 
-    <h2 class="panel-heading">
-      <%= image_tag post.author_photo_url, class: 'author-photo' %>
-      <%= post.title %><br />
+    <h2 class="panel-heading clearfix">
+      <%= image_tag (post.author_photo_url || 'default-photo.jpg'), class: 'img-circle pull-right' %>
+      <div class="panel panel-primary panel-calendar pull-left text-center">
+        <div class="panel-heading small"><%= post.created_at.strftime('%b') %></div>
+        <div class="panel-body"><%= post.created_at.strftime('%d') %></div>
+      </div>
+      <%= link_to post.title, post_path(post) %><br />
       <small>By <%= post.author %></small>
     </h2>
 
     <div class="panel-body">
-      <p><em class="text-muted">Posted on <%= post.created_at.strftime('%A, %B %d %Y at %l:%M%P') %></em></p>
-      <%= raw post.body %>
+      <%= raw post.abstract %>
+      <%= link_to '... continue reading', post_path(post), class: 'btn' %>
     </div>
 
   </article>
