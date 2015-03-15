@@ -7,6 +7,28 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Post.create({
+  title: "Direct Trade 3 Wolf Moon Lo-Fi Leggings",
+  body: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
+    Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
+    locavore you probably haven't heard of them occaecat sint small batch viral. Typewriter listicle asymmetrical, Portland migas mumblecore
+    et gentrify messenger bag Helvetica salvia aliquip. Salvia irure labore esse, banjo Banksy lomo yr Vice brunch Carles. Direct trade
+    artisan gluten-free, polaroid pour-over plaid mixtape dolor Tumblr cornhole put a bird on it sunt distillery sustainable disrupt. Viral
+    odio chia tofu, forage craft beer iPhone aesthetic veniam asymmetrical Odd Future nisi ea shabby chic cred.</p><p>Mollit semiotics
+    Tumblr veniam Pinterest. Selvage messenger bag artisan leggings, tilde deserunt distillery Tumblr reprehenderit Marfa. Umami cred
+    consectetur selvage vero. Non hoodie deep v, mixtape retro aliquip Brooklyn cardigan proident. Yr chambray Vice, tattooed fanny pack
+    twee enim try-hard jean shorts scenester magna Marfa beard laborum photo booth. IPhone cillum chillwave, vegan migas ex dreamcatcher
+    pickled heirloom. Hoodie letterpress narwhal veniam freegan Pitchfork, exercitation non disrupt mlkshk keffiyeh quinoa normcore.</p><p>
+    Labore tilde dolore, selvage mlkshk sustainable Schlitz beard id Neutra excepteur YOLO tousled ethical American Apparel. DIY selfies
+    quis sartorial Williamsburg, seitan tattooed plaid listicle tempor dolore craft beer. Quis VHS nisi, Pinterest Pitchfork locavore
+    messenger bag sunt Odd Future stumptown bespoke next level Helvetica mumblecore. Fixie Neutra pariatur Helvetica skateboard Pinterest,
+    ex lo-fi tempor drinking vinegar irony put a bird on it semiotics. Dreamcatcher chia chambray art party quinoa tofu. Dreamcatcher ut
+    tattooed photo booth, stumptown ex sustainable bicycle rights reprehenderit sartorial consectetur Helvetica Echo Park. Fingerstache
+    delectus iPhone YOLO, Brooklyn literally qui Godard velit quis mlkshk est.</p>",
+  author: "Tony S. Tubblebine",
+  author_photo_url: "https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/73.jpg"
+})
+
+Post.create({
   title: "Check out Hipster Ipsum (hipsum.co)",
   body: "<p>Quinoa placeat Pitchfork dolore nesciunt. Blue Bottle roof party Pitchfork you probably haven't heard of them sriracha. Brunch
     whatever Tumblr, umami adipisicing shabby chic Intelligentsia mixtape mustache viral eu cray Thundercats pour-over next level.
@@ -25,26 +47,6 @@ Post.create({
     asymmetrical sint keffiyeh PBR&B trust fund. Occupy Intelligentsia cupidatat drinking vinegar. Crucifix migas next level, delectus non
     aute laboris incididunt nesciunt distillery. Church-key Vice proident, freegan esse sint ad aute magna kogi dolor deep v Pitchfork.
     Ullamco actually cillum lumbersexual raw denim tilde iPhone.</p>",
-  author: "Some Hipster"
-})
-
-Post.create({
-  title: "Direct Trade 3 Wolf Moon Lo-Fi Leggings",
-  body: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
-    Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
-    locavore you probably haven't heard of them occaecat sint small batch viral. Typewriter listicle asymmetrical, Portland migas mumblecore
-    et gentrify messenger bag Helvetica salvia aliquip. Salvia irure labore esse, banjo Banksy lomo yr Vice brunch Carles. Direct trade
-    artisan gluten-free, polaroid pour-over plaid mixtape dolor Tumblr cornhole put a bird on it sunt distillery sustainable disrupt. Viral
-    odio chia tofu, forage craft beer iPhone aesthetic veniam asymmetrical Odd Future nisi ea shabby chic cred.</p><p>Mollit semiotics
-    Tumblr veniam Pinterest. Selvage messenger bag artisan leggings, tilde deserunt distillery Tumblr reprehenderit Marfa. Umami cred
-    consectetur selvage vero. Non hoodie deep v, mixtape retro aliquip Brooklyn cardigan proident. Yr chambray Vice, tattooed fanny pack
-    twee enim try-hard jean shorts scenester magna Marfa beard laborum photo booth. IPhone cillum chillwave, vegan migas ex dreamcatcher
-    pickled heirloom. Hoodie letterpress narwhal veniam freegan Pitchfork, exercitation non disrupt mlkshk keffiyeh quinoa normcore.</p><p>
-    Labore tilde dolore, selvage mlkshk sustainable Schlitz beard id Neutra excepteur YOLO tousled ethical American Apparel. DIY selfies
-    quis sartorial Williamsburg, seitan tattooed plaid listicle tempor dolore craft beer. Quis VHS nisi, Pinterest Pitchfork locavore
-    messenger bag sunt Odd Future stumptown bespoke next level Helvetica mumblecore. Fixie Neutra pariatur Helvetica skateboard Pinterest,
-    ex lo-fi tempor drinking vinegar irony put a bird on it semiotics. Dreamcatcher chia chambray art party quinoa tofu. Dreamcatcher ut
-    tattooed photo booth, stumptown ex sustainable bicycle rights reprehenderit sartorial consectetur Helvetica Echo Park. Fingerstache
-    delectus iPhone YOLO, Brooklyn literally qui Godard velit quis mlkshk est.</p>",
-  author: "Loco Locavore"
+  author: "Some Hipster",
+  author_photo_url: "https://s3.amazonaws.com/uifaces/faces/twitter/dingyi/73.jpg"
 })
