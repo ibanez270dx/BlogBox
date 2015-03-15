@@ -4,9 +4,11 @@
 
 .page-header {
   margin-top: 0;
-  background-color: rgb(61, 79, 93);
-  h1 { color: #fff; }
-  small { color: rgb(176, 202, 219); }
+  .page-title {
+    text-decoration: none;
+    span { color: #fff; }
+    small { color: rgba(255,255,255,0.75); }
+  }
 }
 
 article h2 {
@@ -17,4 +19,13 @@ article h2 {
     div { padding: 5px 10px; }
   }
   img { width: 75px; }
+}
+
+.alert h2 {
+  margin: 0px 0px 10px 0px;
+}
+.field_with_errors {
+  input, textarea {
+    border: 1px solid #a94442;
+  }
 }

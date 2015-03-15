@@ -10,10 +10,13 @@
 </head>
 <body>
 
-  <header class="page-header clearfix">
+  <header class="page-header bg-primary clearfix">
     <h1 class="container text-center">
       <%= link_to 'New Post', new_post_path, class: 'btn btn-default pull-right' %>
-      BlogBox <small>A Simple Blogging Engine</small>
+      <%= link_to root_path, class: 'page-title' do %>
+        <span>BlogBox</span>
+        <small>A Simple Blogging Engine</small>
+      <% end %>
     </h1>
   </header>
 
