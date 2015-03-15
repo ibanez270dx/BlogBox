@@ -1,3 +1,39 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#post-menu {
+
+  // Pencil Button
+  button[data-toggle] {
+    position: absolute;
+    top: 0; left: 0;
+    margin-left: 100%;
+    border-radius: 0px;
+    font-size: 30px;
+  }
+
+  // Side Menu
+  aside {
+    position: absolute;
+    top: 0px; left: -600px; bottom: 0px;
+    width: 600px;
+    background: rgb(37, 42, 58);
+    color: #fff;
+    transition: left, 1s;
+  }
+
+  // Darkening Layer
+  .darken {
+    position: absolute;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    background-color: rgba(0,0,0,0);
+    transition: background-color, 1s;
+  }
+
+  // When "Active"...
+  &.active {
+    aside { left: 0px; }
+    .darken { background-color: rgba(0,0,0,0.65); }
+  }
+}
