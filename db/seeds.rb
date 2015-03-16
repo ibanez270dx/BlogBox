@@ -1,68 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
-first_post = Post.create({
-  title: "Gluten-Free Sustainable Fixie Beard",
-  body: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
-    Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
-    locavore you probably haven't heard of them occaecat sint small batch viral. Typewriter listicle asymmetrical, Portland migas mumblecore
-    et gentrify messenger bag Helvetica salvia aliquip. Salvia irure labore esse, banjo Banksy lomo yr Vice brunch Carles. Direct trade
-    artisan gluten-free, polaroid pour-over plaid mixtape dolor Tumblr cornhole put a bird on it sunt distillery sustainable disrupt. Viral
-    odio chia tofu, forage craft beer iPhone aesthetic veniam asymmetrical Odd Future nisi ea shabby chic cred.</p><p>Mollit semiotics
-    Tumblr veniam Pinterest. Selvage messenger bag artisan leggings, tilde deserunt distillery Tumblr reprehenderit Marfa. Umami cred
-    consectetur selvage vero. Non hoodie deep v, mixtape retro aliquip Brooklyn cardigan proident. Yr chambray Vice, tattooed fanny pack
-    twee enim try-hard jean shorts scenester magna Marfa beard laborum photo booth. IPhone cillum chillwave, vegan migas ex dreamcatcher
-    pickled heirloom. Hoodie letterpress narwhal veniam freegan Pitchfork, exercitation non disrupt mlkshk keffiyeh quinoa normcore.</p><p>
-    Labore tilde dolore, selvage mlkshk sustainable Schlitz beard id Neutra excepteur YOLO tousled ethical American Apparel. DIY selfies
-    quis sartorial Williamsburg, seitan tattooed plaid listicle tempor dolore craft beer. Quis VHS nisi, Pinterest Pitchfork locavore
-    messenger bag sunt Odd Future stumptown bespoke next level Helvetica mumblecore. Fixie Neutra pariatur Helvetica skateboard Pinterest,
-    ex lo-fi tempor drinking vinegar irony put a bird on it semiotics. Dreamcatcher chia chambray art party quinoa tofu. Dreamcatcher ut
-    tattooed photo booth, stumptown ex sustainable bicycle rights reprehenderit sartorial consectetur Helvetica Echo Park. Fingerstache
-    delectus iPhone YOLO, Brooklyn literally qui Godard velit quis mlkshk est.</p>",
-  abstract: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
-    Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
-    locavore you probably haven't heard of them occaecat sint small batch viral. Typewriter listicle asymmetrical, Portland migas mumblecore
-    et gentrify messenger bag Helvetica salvia aliquip.</p>",
-  author: "Tony S. Tubblebine",
-  author_photo_url: "https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/73.jpg"
-})
-first_post.created_at = 5.days.ago-2.hours-7.minutes
-first_post.save
+# First destroy all existing posts
+Post.destroy_all
 
-second_post = Post.create({
-  title: 'Kale Chips & Craft Beer',
-  body: "<p>Commodo tofu disrupt Banksy kale chips sustainable. Salvia pickled drinking vinegar, heirloom paleo meditation accusamus Shoreditch
-    banh mi semiotics minim slow-carb PBR. Mustache Blue Bottle 3 wolf moon selfies, beard flannel gastropub veniam tempor fap Vice. Brunch
-    four loko Neutra, ethical Marfa selfies Brooklyn PBR umami pork belly messenger bag stumptown before they sold out. Kale chips craft
-    beer culpa Neutra. Hella artisan jean shorts, Wes Anderson retro cray cold-pressed. Esse vero wolf before they sold out mixtape,
-    delectus direct trade minim magna velit asymmetrical.</p><p>XOXO sapiente est photo booth, distillery gentrify pour-over seitan.
-    Reprehenderit four loko cardigan, veniam eiusmod quinoa direct trade Shoreditch vero gastropub gluten-free tilde yr. Shoreditch Marfa
-    odio, dolor VHS exercitation occaecat cornhole 8-bit banjo polaroid Neutra. Before they sold out squid drinking vinegar, iPhone non
-    asymmetrical accusamus velit nihil you probably haven't heard of them dolore Truffaut. Assumenda narwhal sint butcher +1 commodo
-    Pitchfork sartorial tote bag raw denim. Mollit semiotics cornhole sunt fashion axe. Seitan sint cold-pressed, dreamcatcher tilde
-    reprehenderit whatever enim chillwave next level kogi.</p><p>Tofu mollit Portland, Blue Bottle chia labore crucifix next level. Brunch 3
-    wolf moon voluptate listicle, distillery synth placeat selfies four dollar toast excepteur freegan. Semiotics aesthetic post-ironic,
-    before they sold out elit ad Truffaut Intelligentsia enim accusamus heirloom chillwave health goth crucifix Williamsburg. Quis sartorial
-    umami chambray irure cronut. Nostrud culpa listicle, exercitation non bespoke mlkshk letterpress vero veniam cillum asymmetrical. Cronut
-    skateboard American Apparel, single-origin coffee ad health goth sunt sartorial nisi raw denim aute chillwave exercitation. Church-key
-    Shoreditch occaecat viral seitan Odd Future.</p><p>Twee ea plaid duis before they sold out velit. Disrupt ethical flexitarian vinyl
-    laborum lo-fi. Chillwave disrupt yr commodo occupy Banksy. Quinoa Williamsburg ad artisan. Lumbersexual non roof party seitan occaecat.
-    Yr commodo jean shorts lo-fi, assumenda artisan whatever flexitarian. Salvia disrupt Pinterest jean shorts PBR.</p>",
-  abstract: "<p>Commodo tofu disrupt Banksy kale chips sustainable. Salvia pickled drinking vinegar, heirloom paleo meditation accusamus Shoreditch
-    banh mi semiotics minim slow-carb PBR. Mustache Blue Bottle 3 wolf moon selfies, beard flannel gastropub veniam tempor fap Vice. Brunch
-    four loko Neutra, ethical Marfa selfies Brooklyn PBR umami pork belly messenger bag stumptown before they sold out. Kale chips craft
-    beer culpa Neutra. Hella artisan jean shorts, Wes Anderson retro cray cold-pressed. Esse vero wolf before they sold out mixtape,
-    delectus direct trade minim magna velit asymmetrical.</p>",
-  author: "John Smith"
-})
-second_post.created_at = 3.days.ago-6.hours+11.minutes
-second_post.save
-
+# Seed some posts
 Post.create({
   title: "Hipster Ipsum - Artisanal filler text",
   body: "<p>Quinoa placeat Pitchfork dolore nesciunt. Blue Bottle roof party Pitchfork you probably haven't heard of them sriracha. Brunch
@@ -87,6 +27,61 @@ Post.create({
     Typewriter eiusmod YOLO, pug Marfa veniam pickled tattooed do readymade Vice aesthetic. Quis beard vinyl sint taxidermy, mixtape
     occaecat tofu mlkshk anim. Bespoke asymmetrical swag gastropub Thundercats. Id organic authentic, lumbersexual fanny pack post-ironic
     twee plaid.</p>",
-  author: "Some Hipster",
+  author: "hipsum.co",
   author_photo_url: "https://s3.amazonaws.com/uifaces/faces/twitter/dingyi/73.jpg"
+})
+
+Post.create({
+  title: 'Kale Chips & Craft Beer',
+  body: "<p>Commodo tofu disrupt Banksy kale chips sustainable. Salvia pickled drinking vinegar, heirloom paleo meditation accusamus Shoreditch
+    banh mi semiotics minim slow-carb PBR. Mustache Blue Bottle 3 wolf moon selfies, beard flannel gastropub veniam tempor fap Vice. Brunch
+    four loko Neutra, ethical Marfa selfies Brooklyn PBR umami pork belly messenger bag stumptown before they sold out. Kale chips craft
+    beer culpa Neutra. Hella artisan jean shorts, Wes Anderson retro cray cold-pressed. Esse vero wolf before they sold out mixtape,
+    delectus direct trade minim magna velit asymmetrical.</p><p>XOXO sapiente est photo booth, distillery gentrify pour-over seitan.
+    Reprehenderit four loko cardigan, veniam eiusmod quinoa direct trade Shoreditch vero gastropub gluten-free tilde yr. Shoreditch Marfa
+    odio, dolor VHS exercitation occaecat cornhole 8-bit banjo polaroid Neutra. Before they sold out squid drinking vinegar, iPhone non
+    asymmetrical accusamus velit nihil you probably haven't heard of them dolore Truffaut. Assumenda narwhal sint butcher +1 commodo
+    Pitchfork sartorial tote bag raw denim. Mollit semiotics cornhole sunt fashion axe. Seitan sint cold-pressed, dreamcatcher tilde
+    reprehenderit whatever enim chillwave next level kogi.</p><p>Tofu mollit Portland, Blue Bottle chia labore crucifix next level. Brunch 3
+    wolf moon voluptate listicle, distillery synth placeat selfies four dollar toast excepteur freegan. Semiotics aesthetic post-ironic,
+    before they sold out elit ad Truffaut Intelligentsia enim accusamus heirloom chillwave health goth crucifix Williamsburg. Quis sartorial
+    umami chambray irure cronut. Nostrud culpa listicle, exercitation non bespoke mlkshk letterpress vero veniam cillum asymmetrical. Cronut
+    skateboard American Apparel, single-origin coffee ad health goth sunt sartorial nisi raw denim aute chillwave exercitation. Church-key
+    Shoreditch occaecat viral seitan Odd Future.</p><p>Twee ea plaid duis before they sold out velit. Disrupt ethical flexitarian vinyl
+    laborum lo-fi. Chillwave disrupt yr commodo occupy Banksy. Quinoa Williamsburg ad artisan. Lumbersexual non roof party seitan occaecat.
+    Yr commodo jean shorts lo-fi, assumenda artisan whatever flexitarian. Salvia disrupt Pinterest jean shorts PBR.</p>",
+  abstract: "<p>Commodo tofu disrupt Banksy kale chips sustainable. Salvia pickled drinking vinegar, heirloom paleo meditation accusamus Shoreditch
+    banh mi semiotics minim slow-carb PBR. Mustache Blue Bottle 3 wolf moon selfies, beard flannel gastropub veniam tempor fap Vice. Brunch
+    four loko Neutra, ethical Marfa selfies Brooklyn PBR umami pork belly messenger bag stumptown before they sold out. Kale chips craft
+    beer culpa Neutra. Hella artisan jean shorts, Wes Anderson retro cray cold-pressed. Esse vero wolf before they sold out mixtape,
+    delectus direct trade minim magna velit asymmetrical.</p>",
+  author: "John Smith",
+  created_at: 3.days.ago-6.hours+11.minutes
+})
+
+Post.create({
+  title: "Gluten-Free Sustainable Fixie Beard",
+  body: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
+    Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
+    locavore you probably haven't heard of them occaecat sint small batch viral. Typewriter listicle asymmetrical, Portland migas mumblecore
+    et gentrify messenger bag Helvetica salvia aliquip. Salvia irure labore esse, banjo Banksy lomo yr Vice brunch Carles. Direct trade
+    artisan gluten-free, polaroid pour-over plaid mixtape dolor Tumblr cornhole put a bird on it sunt distillery sustainable disrupt. Viral
+    odio chia tofu, forage craft beer iPhone aesthetic veniam asymmetrical Odd Future nisi ea shabby chic cred.</p><p>Mollit semiotics
+    Tumblr veniam Pinterest. Selvage messenger bag artisan leggings, tilde deserunt distillery Tumblr reprehenderit Marfa. Umami cred
+    consectetur selvage vero. Non hoodie deep v, mixtape retro aliquip Brooklyn cardigan proident. Yr chambray Vice, tattooed fanny pack
+    twee enim try-hard jean shorts scenester magna Marfa beard laborum photo booth. IPhone cillum chillwave, vegan migas ex dreamcatcher
+    pickled heirloom. Hoodie letterpress narwhal veniam freegan Pitchfork, exercitation non disrupt mlkshk keffiyeh quinoa normcore.</p><p>
+    Labore tilde dolore, selvage mlkshk sustainable Schlitz beard id Neutra excepteur YOLO tousled ethical American Apparel. DIY selfies
+    quis sartorial Williamsburg, seitan tattooed plaid listicle tempor dolore craft beer. Quis VHS nisi, Pinterest Pitchfork locavore
+    messenger bag sunt Odd Future stumptown bespoke next level Helvetica mumblecore. Fixie Neutra pariatur Helvetica skateboard Pinterest,
+    ex lo-fi tempor drinking vinegar irony put a bird on it semiotics. Dreamcatcher chia chambray art party quinoa tofu. Dreamcatcher ut
+    tattooed photo booth, stumptown ex sustainable bicycle rights reprehenderit sartorial consectetur Helvetica Echo Park. Fingerstache
+    delectus iPhone YOLO, Brooklyn literally qui Godard velit quis mlkshk est.</p>",
+  abstract: "<p>Tote bag cold-pressed paleo, mixtape nostrud Intelligentsia kitsch Bushwick cillum Tumblr. Wes Anderson keffiyeh Intelligentsia,
+    Pitchfork DIY minim whatever dolore adipisicing chia forage hoodie gluten-free non. Shoreditch squid drinking vinegar, DIY try-hard
+    locavore you probably haven't heard of them occaecat sint small batch viral. Typewriter listicle asymmetrical, Portland migas mumblecore
+    et gentrify messenger bag Helvetica salvia aliquip.</p>",
+  author: "Tony S. Tubblebine",
+  author_photo_url: "https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/73.jpg",
+  created_at: 5.days.ago-2.hours-7.minutes
 })
