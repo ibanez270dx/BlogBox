@@ -2,12 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.page-header {
-  margin-top: 0;
-  .page-title {
-    text-decoration: none;
-    span { color: #fff; }
-    small { color: rgba(255,255,255,0.75); }
+header {
+  margin-bottom: 1.5em;
+  background-color: #204560;
+  h1, a {
+    margin: 20px 0;
   }
 }
 
@@ -16,9 +15,13 @@ article h2 {
   .panel-calendar {
     margin-right: 15px;
     margin-bottom: 0;
-    div { padding: 5px 10px; }
+    div {
+      padding: 5px 10px;
+    }
   }
-  img { width: 75px; }
+  img {
+    width: 75px;
+  }
 }
 
 .alert h2 {
