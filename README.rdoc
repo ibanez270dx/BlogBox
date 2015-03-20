@@ -1,9 +1,11 @@
-== BlogBox
+BlogBox
+====
 
 Simple blogging engine sample app built for a workshop at San Jose State University, 2015.
 
 Developed using Ruby 2.2.0.
 
+Getting Started
 ---
     cd /to/my/development/directory
 
