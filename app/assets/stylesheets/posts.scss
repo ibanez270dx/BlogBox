@@ -4,8 +4,25 @@
 nav {
   margin-bottom: 1.5em;
   background-color: #204560;
-  h1, a {
+
+  h1 {
     margin: 20px 0;
+  }
+
+  div > a {
+    margin-top: 24px;
+  }
+
+  .github-link {
+    margin-right: 1em;
+    color: #fff;
+    .octicon {
+      font-size: 20px;
+      margin-left: 3px;
+    }
+    &:hover {
+      color: #c5ccdf;
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   <title>BlogBox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://buttons.github.io/components/octicons/octicons/octicons.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,6 +14,10 @@
   <nav>
     <div class="container clearfix">
       <%= link_to 'New Post', new_post_path, class: 'btn btn-default pull-right' %>
+      <%= link_to 'https://github.com/ibanez270dx/BlogBox', class: 'github-link btn pull-right', target: '_blank' do %>
+        <span class="hidden-xs">View on GitHub</span>
+        <span class="octicon octicon-mark-github"></span>
+      <% end %>
       <h1><%= link_to 'BlogBox', root_path %></h1>
     </div>
   </nav>
