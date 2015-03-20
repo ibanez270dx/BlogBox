@@ -1,4 +1,4 @@
-upstream humanise {
+upstream BlogBox {
   # path to Unicorn sock file:
   server unix:/srv/BlogBox/tmp/unicorn.sock fail_timeout=0;
 }
