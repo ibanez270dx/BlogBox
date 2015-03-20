@@ -2,27 +2,10 @@
 <% @posts.each do |post| %>
   <article class="panel panel-default">
 
-    <header class="panel-heading clearfix">
-      <!-- Author Photo -->
-      <%= image_tag (post.author_photo_url || 'default-photo.jpg'), class: 'img-circle pull-right' %>
-
-      <!-- Calendar Date -->
-      <div class="panel panel-primary panel-calendar pull-left text-center">
-        <div class="panel-heading"><%= post.created_at.strftime('%b') %></div>
-        <div class="panel-body lead">
-          <strong><%= post.created_at.strftime('%d') %></strong>
-        </div>
-      </div>
-
-      <!-- Title + Author Name -->
-      <h2>
-        <%= link_to post.title, post_path(post) %><br />
-        <small>By <%= post.author %></small>
-      </h2>
-    </header>
+    <%= render partial: 'posts/header', locals: { post: post } %>
 
     <div class="post-body panel-body">
-      <%= raw post.abstract %>
+      <%= sanitize post.abstract %><br />
       <%= link_to '... continue reading', post_path(post), class: 'btn' %>
     </div>
 

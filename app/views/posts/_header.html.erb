@@ -1,0 +1,25 @@
+<header class="media panel-heading">
+  <!-- Calendar Date -->
+  <div class="media-left media-middle">
+    <div class="calendar panel panel-primary text-center">
+      <div class="panel-heading"><%= post.created_at.strftime('%b') %></div>
+      <div class="panel-body lead"><strong><%= post.created_at.strftime('%d') %></strong></div>
+    </div>
+  </div>
+
+  <!-- Title + Author Name -->
+  <div class="media-body">
+    <h2>
+      <%= link_to post.title, post_path(post) %><br />
+      <small>By <%= post.author %></small>
+    </h2>
+  </div>
+
+  <!-- Author Photo -->
+  <div class="media-right media-middle">
+    <figure
+      class="img-circle"
+      style="background-image: url(<%= image_url (post.author_photo_url.blank? ? 'default-photo.jpg' : post.author_photo_url) %>);">
+    </figure>
+  </div>
+</header>
