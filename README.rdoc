@@ -1,28 +1,35 @@
-== README
+== BlogBox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple blogging engine sample app built for a workshop at San Jose State University, 2015.
 
-Things you may want to cover:
+Developed using Ruby 2.2.0.
 
-* Ruby version
+```
+cd /to/my/development/directory
 
-* System dependencies
+git clone git@github.com:ibanez270dx/BlogBox.git
 
-* Configuration
+cd BlogBox
 
-* Database creation
+bundle
+```
 
-* Database initialization
+At this point, you need to configure the app to use your local database. The code here assumes
+a local MySQL installation without a root password.
 
-* How to run the test suite
+```
+rake db:create
 
-* Services (job queues, cache servers, search engines, etc.)
+rake db:migrate
 
-* Deployment instructions
+rake db:seed
 
-* ...
+```
 
+Now just start up your Rails server
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+```
+rails server
+```
+
+...then open up your browser and hit http://localhost:3000
