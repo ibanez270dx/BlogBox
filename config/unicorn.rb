@@ -1,4 +1,4 @@
-APP_PATH = "/home/deploy/srv/BlogBox"
+APP_PATH = "/srv/BlogBox"
 
 ##############################################
 # Basic Configuration
