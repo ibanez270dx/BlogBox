@@ -1,8 +1,7 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-header {
+////////////////////////////////////////////////
+// Navigation & Title
+////////////////////////////////////////////////
+nav {
   margin-bottom: 1.5em;
   background-color: #204560;
   h1, a {
@@ -10,20 +9,33 @@ header {
   }
 }
 
-article h2 {
-  margin: 0;
-  .panel-calendar {
-    margin-right: 15px;
-    margin-bottom: 0;
-    div {
-      padding: 5px 10px;
+////////////////////////////////////////////////
+// Blog Post
+////////////////////////////////////////////////
+article {
+  header {
+    h2 {
+      margin: 0;
     }
-  }
-  img {
-    width: 75px;
+    img {
+      width: 70px;
+    }
+    .panel-calendar {
+      margin: 3px 15px 0px 0px;
+      .panel-heading {
+        padding: 0;
+      }
+      .panel-body {
+        margin: 0;
+        padding: 0.25em 0.75em;
+      }
+    }
   }
 }
 
+////////////////////////////////////////////////
+// Error Messaging
+////////////////////////////////////////////////
 .alert h2 {
   margin: 0px 0px 10px 0px;
 }

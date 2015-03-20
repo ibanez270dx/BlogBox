@@ -1,16 +1,25 @@
 <article class="panel panel-default">
 
-  <h2 class="panel-heading clearfix">
+  <header class="panel-heading clearfix">
+    <!-- Author Photo -->
     <%= image_tag (@post.author_photo_url || 'default-photo.jpg'), class: 'img-circle pull-right' %>
-    <div class="panel panel-primary panel-calendar pull-left text-center">
-      <div class="panel-heading small"><%= @post.created_at.strftime('%b') %></div>
-      <div class="panel-body"><%= @post.created_at.strftime('%d') %></div>
-    </div>
-    <%= link_to @post.title, post_path(@post) %><br />
-    <small>By <%= @post.author %></small>
-  </h2>
 
-  <div class="panel-body">
+    <!-- Calendar Date -->
+    <div class="panel panel-primary panel-calendar pull-left text-center">
+      <div class="panel-heading"><%= @post.created_at.strftime('%b') %></div>
+      <div class="panel-body lead">
+        <strong><%= @post.created_at.strftime('%d') %></strong>
+      </div>
+    </div>
+
+    <!-- Title + Author Name -->
+    <h2>
+      <%= link_to @post.title, post_path(@post) %><br />
+      <small>By <%= @post.author %></small>
+    </h2>
+  </header>
+
+  <div class="post-body panel-body">
     <p><em class="text-muted">Posted on <%= @post.created_at.strftime('%A, %B %d %Y at %l:%M%P %Z') %></em></p>
     <%= raw @post.body %>
   </div>

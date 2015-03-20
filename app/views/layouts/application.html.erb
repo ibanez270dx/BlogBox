@@ -10,12 +10,12 @@
 </head>
 <body>
 
-  <header>
+  <nav>
     <div class="container clearfix">
       <%= link_to 'New Post', new_post_path, class: 'btn btn-default pull-right' %>
       <h1><%= link_to 'BlogBox', root_path %></h1>
-    </h1>
-  </header>
+    </div>
+  </nav>
 
   <section class="container">
     <%= yield %>
@@ -27,5 +27,6 @@
       Copyright &copy; <%= Time.now.year %> <%= link_to 'Humani.se', 'http://humani.se' %>. All Rights Reserved.
     </p>
   </footer>
+
 </body>
 </html>
